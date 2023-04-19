@@ -8,11 +8,12 @@ struct no {
 }
 
 No *criar_lista(){
-    
+    return NULL;
 }
 
-void adicionar_final(No *ptr_auxiliar){
-
+void adicionar_final(No *ptr_lista, int dados){
+    No *novo_elemento = (No*) malloc(sizeof(No));
+    novo_elemento->dados = dados;
 }
 
 void adicionar_inicio(){

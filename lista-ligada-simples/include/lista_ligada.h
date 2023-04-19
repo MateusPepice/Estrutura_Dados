@@ -3,7 +3,9 @@
 
 typedef struct no No;
 
-void adicionar_final();
+No *criar_lista();
+
+void adicionar_final(No );
 void adicionar_inicio();
 
 void remover_final();

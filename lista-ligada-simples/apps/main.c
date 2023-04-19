@@ -18,6 +18,8 @@ int main (){
     printf("0 - Sair do programa");
     scanf("%d", &escolha);
 
+    No *lista = criar_lista();
+
     switch(escolha){
         case 1:
             

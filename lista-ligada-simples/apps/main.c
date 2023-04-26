@@ -1,5 +1,5 @@
-#include "lista_ligada.h"
-#include<stdlib.h>
+#include "../include/lista_ligada.h"
+#include<stdio.h>
 #include<stdlib.h>
 
 int main (){

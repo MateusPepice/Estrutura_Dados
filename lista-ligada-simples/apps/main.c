@@ -6,6 +6,8 @@ int main (){
     int escolha;
     int dados;
 
+    No *lista = criar_lista();
+
     printf("-----MENU DE OPÇÕES-----");
     printf("1 - Adicionar final");
     printf("2 - Adicionar comeco");
@@ -18,7 +20,6 @@ int main (){
     printf("0 - Sair do programa");
     scanf("%d", &escolha);
 
-    No *lista = criar_lista();
 
     switch(escolha){
         case 1:

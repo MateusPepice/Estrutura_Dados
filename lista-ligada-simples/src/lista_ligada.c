@@ -1,7 +1,7 @@
 #include "../include/lista_ligada.h"
 #include<stdio.h>
 #include<stdlib.h>
-#include<stdbool.h> 
+#include <stdbool.h> 
 
 struct no {
     int dados;

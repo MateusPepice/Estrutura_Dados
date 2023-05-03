@@ -12,18 +12,18 @@ No *criar_lista(){
     return NULL;
 }
 
-void adicionar_final(No **ptr_lista, int dados){
+void adicionar_final(No *ptr_lista, int dados){
 
-    No *novo_elemento = (No*) malloc(sizeof(No));
+    No *novo_elemento = (No*) malloc(sizeof(No)); // Validando houve a alocação de memória
     if (novo_elemento == NULL) {
        perror("malloc");
        exit(EXIT_FAILURE);
     }
 
-    novo_elemento->ptr_proximo = NULL;
+    novo_elemento->ptr_proximo = NULL; 
     novo_elemento->dados = dados;
 
-    No *ptr_auxiliar = *ptr_lista;
+    No *ptr_auxiliar = ptr_lista;
     while(ptr_auxiliar->ptr_proximo != NULL){
         ptr_auxiliar->ptr_proximo = ptr_auxiliar->ptr_proximo;
     }
@@ -31,7 +31,7 @@ void adicionar_final(No **ptr_lista, int dados){
 
 }
 
-void adicionar_inicio(No **ptr_lista, int valor){
+void adicionar_inicio(No *ptr_lista, int valor){
 
     No *novo_elemento = (No*) malloc(sizeof(No));
     if (novo_elemento == NULL) {
@@ -39,8 +39,8 @@ void adicionar_inicio(No **ptr_lista, int valor){
        exit(EXIT_FAILURE);
     }
 
-    novo_elemento->dados = dados;
-    novo_elemento->ptr_proximo = *ptr_lista;
+    novo_elemento->dados = valor;
+    novo_elemento->ptr_proximo = ptr_lista;
 
     *ptr_lista = novo_elemento;
 }
@@ -66,30 +66,26 @@ bool remover_final(No **ptr_lista){
 
 bool remover_inicio(No **ptr_lista){
 
-    No *ptr_auxiliar = ptr_lista;
-    if(ptr_auxiliar == NULL){
-        return false;
-    }
 
 
 
 }
 
-void buscar_valor(){
+void buscar_valor(No *lista, int dados){
 
 }
 
-void buscar_posicao(){
+void buscar_posicao(No *lista, int posicao){
 
 }
 
-void destruir_lista(){
+void destruir_lista(No **ptr_lista){
 
 }
 
-void imprimir_lista(No **ptr_lista){
+void imprimir_lista(No *ptr_lista){
     
-    No *ptr_imprimir = *ptr_lista;
+    No *ptr_imprimir = ptr_lista;
 
     while(ptr_imprimir->ptr_proximo != NULL){
         printf("%d -> ", ptr_imprimir->dados);

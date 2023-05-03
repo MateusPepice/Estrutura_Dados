@@ -1,6 +1,7 @@
 #include "../include/lista_ligada.h"
 #include<stdio.h>
 #include<stdlib.h>
+#include <stdbool.h> 
 
 int main (){
     int escolha;
@@ -23,9 +24,14 @@ int main (){
 
     switch(escolha){
         case 1:
-            
+            printf("Informe o dado que deseja inserir: ");
+            scanf("%d", &dados);
+            adicionar_final(lista, dados);
             break;
         case 2:
+            printf("Informe o dado que deseja inserir: ");
+            scanf("%d", &dados);
+            adicionar_inicio(lista, dados);
             break;
         case 3:
             break;

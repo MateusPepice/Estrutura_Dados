@@ -4,21 +4,22 @@
 #include <stdbool.h> 
 
 int main (){
+
     int escolha;
     int dados;
 
     No *lista = criar_lista();
 
-    printf("-----MENU DE OPÇÕES-----");
-    printf("1 - Adicionar final");
-    printf("2 - Adicionar comeco");
-    printf("3 - Remover final");
-    printf("4 - Remover inicio");
-    printf("5 - Imprimir lista");
-    printf("6 - Buscar por valor");
-    printf("7 - Buscar por posicao");
-    printf("8 - Destruir lista");
-    printf("0 - Sair do programa");
+    printf("\n-----MENU DE OPCOES-----\n");
+    printf("1 - Adicionar final\n");
+    printf("2 - Adicionar comeco\n");
+    printf("3 - Remover final\n");
+    printf("4 - Remover inicio\n");
+    printf("5 - Imprimir lista\n");
+    printf("6 - Buscar por valor\n");
+    printf("7 - Buscar por posicao\n");
+    printf("8 - Destruir lista\n");
+    printf("0 - Sair do programa\n");
     scanf("%d", &escolha);
 
 
@@ -51,4 +52,5 @@ int main (){
             printf("Opcao invalida!!");
             break;
     }
+    printf("Você saiu do sistema!");
 }
